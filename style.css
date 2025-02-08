@@ -1,10 +1,11 @@
+/* Fancy Valentine Background */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffe6f2;
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
     margin: 0;
     overflow: hidden;
     position: relative;
@@ -21,25 +22,40 @@ body::before {
     animation: floating 4s infinite ease-in-out alternate;
 }
 
-/* Floating Animation */
 @keyframes floating {
     from { transform: translateY(0) translateX(-50%); }
     to { transform: translateY(20px) translateX(-50%); }
 }
 
+/* Glassmorphism Container */
 .container {
     text-align: center;
-    background: white;
+    background: rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(255, 0, 100, 0.3);
     max-width: 400px;
+    backdrop-filter: blur(10px);
 }
 
+/* Headings */
 h1 {
-    color: #ff4d79;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(255, 0, 100, 0.5);
 }
 
+/* Input Styling */
+input {
+    padding: 12px;
+    width: 80%;
+    border: 2px solid #ff4d79;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Buttons */
 button {
     margin-top: 15px;
     padding: 12px;
@@ -57,24 +73,18 @@ button:hover {
     transform: scale(1.1);
 }
 
-input {
-    padding: 10px;
-    width: 80%;
-    border: 2px solid #ff4d79;
-    border-radius: 5px;
-    outline: none;
-    text-align: center;
-}
-
+/* Error Messages */
 .error {
     color: red;
     margin-top: 10px;
 }
 
+/* Hidden Class */
 .hidden {
     display: none;
 }
 
+/* Funny Cat GIF */
 #cat-gif {
     width: 250px;
     height: auto;
