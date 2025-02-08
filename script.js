@@ -6,7 +6,7 @@ function checkAnswer() {
     if (answer === "reshu") {
         showLoadingScreen();
         setTimeout(() => {
-            window.location.href = "https://deltabladex.github.io/val2025/"; // Replace with actual URL
+            window.location.href = "https://your-destination-site.com"; // Replace with actual URL
         }, 3000);
     } else {
         errorMessage.textContent = "Wrong answer! Try again.";
